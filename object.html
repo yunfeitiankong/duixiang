@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>boject</title>
+    <meta charset = "utf-8">
+  </head>
+  <body>
+    <script>
+    var a;
+    var arr = [332, 123];
+    
+    var ford = {
+      make: 'ford',
+      model: 'focus',
+      year: 2006,
+      color: 'blue',
+      passengers: '4',
+      mileage: 130000
+    };
+
+    var wulin = {
+      make: 'wulin',
+      model: 'hongguang',
+      year: 2016,
+      color: 'write',
+      passengers: '7',
+      mileage: 300000
+    };
+
+    document.write(ford.make + "的颜色是" + ford.color +"<br>");
+    document.write(wulin.make + "的颜色是" + wulin.color +"<br>");
+    
+    function isNew(car) {
+      if (car.year > 2016 && car.mileage <10000){
+        document.write("新车");
+      }else{
+        document.write("你可以换车了");
+      }
+      document.write("<br>");
+    }
+    isNew(ford)
+    </script>
+
+  </body>
+</html>, 
